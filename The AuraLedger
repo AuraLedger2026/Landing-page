@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraLedger — The Disappearance of Bookkeeping</title>
+  <meta name="description" content="Real-time bookkeeping for Shopify and Amazon sellers. AuraLedger makes accounting invisible so you can focus on growth." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <a class="logo-mark" href="#top">
+      <span class="logo-al" aria-label="AuraLedger logo">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-hidden="true">
+          <defs>
+            <radialGradient id="nav-g" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#f0c040"/>
+              <stop offset="70%" stop-color="#d4a017"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <circle cx="32" cy="32" r="18" fill="url(#nav-g)" opacity="0.95"/>
+          <circle cx="32" cy="32" r="10" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.4"/>
+          <circle cx="32" cy="32" r="4" fill="#ffd700" opacity="0.8"/>
+        </svg>
+      </span>
+      <span class="logo-wordmark">Aura<span>Ledger</span></span>
+    </a>
+
+    <ul class="nav-links" aria-label="Main navigation">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a class="nav-login" href="https://v0-zerobooks-app.vercel.app/auth/login">Login</a>
+      <a class="btn-primary btn-sm" href="https://v0-zerobooks-app.vercel.app/auth/login">Start Free</a>
+    </div>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" aria-hidden="true">
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="https://v0-zerobooks-app.vercel.app/auth/login">Login</a></li>
+      <li><a class="btn-primary" href="https://v0-zerobooks-app.vercel.app/auth/login">Start Free</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════ HERO ══════════════════════════════════ -->
+  <header class="hero" id="top">
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Beta access now open
+      </div>
+
+      <div class="hero-emblem" aria-hidden="true">
+        <svg viewBox="0 0 160 160" width="160" height="160">
+          <defs>
+            <radialGradient id="emblem-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f0c040" stop-opacity="1"/>
+              <stop offset="50%" stop-color="#d4a017" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="80" cy="80" r="60" fill="url(#emblem-glow)" opacity="0.85"/>
+          <circle cx="80" cy="80" r="42" fill="none" stroke="#d4a017" stroke-width="0.8" opacity="0.5"/>
+          <circle cx="80" cy="80" r="24" fill="none" stroke="#f0c040" stroke-width="0.8" opacity="0.4"/>
+          <circle cx="80" cy="80" r="8"  fill="#ffd700" opacity="0.9"/>
+        </svg>
+        <div class="emblem-ring ring-1"></div>
+        <div class="emblem-ring ring-2"></div>
+      </div>
+
+      <h1>
+        The&nbsp;<em>Disappearance</em><br>
+        of&nbsp;Bookkeeping.
+      </h1>
+      <p class="hero-sub">
+        AuraLedger connects your Shopify and Amazon stores to a living ledger —
+        reconciling revenue, fees, and taxes in real time. Accounting that
+        works while you sleep.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://v0-zerobooks-app.vercel.app/auth/login">
+          See Real-Time Demo
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="btn-ghost" href="#how-it-works">Watch how it works</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">$2.4M+</span>
+          <span class="stat-label">Reconciled daily</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">99.8%</span>
+          <span class="stat-label">Accuracy rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">< 5 min</span>
+          <span class="stat-label">Setup time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ TICKER ═══════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Shopify Revenue</span><span class="ticker-sep">◆</span>
+      <span>Amazon FBA Fees</span><span class="ticker-sep">◆</span>
+      <span>Sales Tax Automation</span><span class="ticker-sep">◆</span>
+      <span>Real-Time P&amp;L</span><span class="ticker-sep">◆</span>
+      <span>Inventory Costing</span><span class="ticker-sep">◆</span>
+      <span>Multi-Channel Sync</span><span class="ticker-sep">◆</span>
+      <span>Cash Flow Forecast</span><span class="ticker-sep">◆</span>
+      <span>Shopify Revenue</span><span class="ticker-sep">◆</span>
+      <span>Amazon FBA Fees</span><span class="ticker-sep">◆</span>
+      <span>Sales Tax Automation</span><span class="ticker-sep">◆</span>
+      <span>Real-Time P&amp;L</span><span class="ticker-sep">◆</span>
+      <span>Inventory Costing</span><span class="ticker-sep">◆</span>
+      <span>Multi-Channel Sync</span><span class="ticker-sep">◆</span>
+      <span>Cash Flow Forecast</span><span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ FEATURES ══════════════════════════════════ -->
+  <section id="features" class="section features-section" aria-label="Features">
+    <div class="section-inner">
+      <div class="section-label">Core Features</div>
+      <h2>Everything invisible.<br><em>Everything accounted for.</em></h2>
+      <p class="section-sub">
+        Built from the ground up for e-commerce operators who need precision
+        without the spreadsheet grind.
+      </p>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--large">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="12" stroke="#d4a017" stroke-width="1.2"/>
+              <path d="M16 8v8l5 3" stroke="#f0c040" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Real-Time Sync</h3>
+          <p>Every payout, refund, and fee posts to your ledger the moment it happens — no manual imports, no end-of-month scramble.</p>
+          <div class="feature-pulse">
+            <span class="pulse-dot"></span> Live
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <rect x="4" y="8" width="24" height="16" rx="2" stroke="#d4a017" stroke-width="1.2"/>
+              <path d="M4 13h24" stroke="#f0c040" stroke-width="1"/>
+              <path d="M10 18h4M18 18h4" stroke="#d4a017" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Shopify Integration</h3>
+          <p>Native OAuth connection. Orders, payouts, discounts, and shipping all mapped to correct accounts automatically.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <path d="M6 26L16 6l10 20" stroke="#d4a017" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 20h14" stroke="#f0c040" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3>Amazon FBA</h3>
+          <p>Settlement reports decoded automatically. Referral fees, FBA fulfillment, storage, and reimbursements — all categorized.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <path d="M8 24V14l8-6 8 6v10" stroke="#d4a017" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="13" y="18" width="6" height="6" rx="1" stroke="#f0c040" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3>Sales Tax Engine</h3>
+          <p>Economic nexus monitoring across all 50 states. Liability calculated per jurisdiction, per channel, per SKU.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <path d="M4 24l7-8 5 4 5-10 7 8" stroke="#d4a017" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Live P&amp;L</h3>
+          <p>A profit-and-loss statement that refreshes continuously. Know your margin before the day ends, not after month close.</p>
+        </div>
+
+        <div class="feature-card feature-card--accent">
+          <div class="feature-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="10" stroke="#041a14" stroke-width="1.2"/>
+              <path d="M16 10v6l4 2" stroke="#041a14" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cash Flow Forecast</h3>
+          <p>AI-powered 30/60/90-day projections based on your actual sales velocity and seasonal patterns.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ HOW IT WORKS ═══════════════════════════════ -->
+  <section id="how-it-works" class="section steps-section" aria-label="How it works">
+    <div class="section-inner">
+      <div class="section-label">How it works</div>
+      <h2>Up and running in<br><em>under five minutes.</em></h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Connect your stores</h3>
+            <p>OAuth into Shopify and Amazon Seller Central. No CSV files. No API keys to manage. One click per channel.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>We map your chart of accounts</h3>
+            <p>AuraLedger auto-generates a GAAP-aligned chart of accounts tuned for e-commerce. Customize any time.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Your books run themselves</h3>
+            <p>Every transaction is classified, reconciled, and posted. Your accountant gets read-only access in one share.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+  <section class="section testimonials-section" aria-label="Testimonials">
+    <div class="section-inner">
+      <div class="section-label">Early feedback</div>
+      <h2>Founders who stopped<br><em>thinking about books.</em></h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p class="quote">"I spent 12 hours a month reconciling Amazon settlements. AuraLedger eliminated that entirely in the first week."</p>
+          <div class="testimonial-author">
+            <div class="avatar">MK</div>
+            <div>
+              <strong>Marcus K.</strong>
+              <span>7-figure Amazon seller</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"Finally a tool built for DTC. Not a generic accounting app with Shopify bolted on — this is the reverse."</p>
+          <div class="testimonial-author">
+            <div class="avatar">SP</div>
+            <div>
+              <strong>Sofia P.</strong>
+              <span>Shopify brand founder</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"The real-time P&L alone is worth it. I check it like I check my Shopify dashboard — every morning."</p>
+          <div class="testimonial-author">
+            <div class="avatar">JL</div>
+            <div>
+              <strong>James L.</strong>
+              <span>Multi-channel operator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ PRICING ════════════════════════════════════ -->
+  <section id="pricing" class="section pricing-section" aria-label="Pricing">
+    <div class="section-inner">
+      <div class="section-label">Pricing</div>
+      <h2>Simple, honest<br><em>pricing.</em></h2>
+      <p class="section-sub">Start free. Upgrade when you're ready. No surprise fees — ever.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><span class="price-num">$0</span><span class="price-per">/mo</span></div>
+          <p class="plan-desc">Perfect for founders just getting started.</p>
+          <ul class="plan-features">
+            <li>1 store connection</li>
+            <li>Real-time sync</li>
+            <li>Basic P&amp;L report</li>
+            <li>30-day history</li>
+          </ul>
+          <a class="btn-ghost btn-full" href="https://v0-zerobooks-app.vercel.app/auth/login">Get started free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="plan-price"><span class="price-num">$49</span><span class="price-per">/mo</span></div>
+          <p class="plan-desc">For operators scaling across channels.</p>
+          <ul class="plan-features">
+            <li>Up to 5 store connections</li>
+            <li>Amazon FBA reconciliation</li>
+            <li>Sales tax engine</li>
+            <li>Cash flow forecasting</li>
+            <li>Accountant access</li>
+            <li>Unlimited history</li>
+          </ul>
+          <a class="btn-primary btn-full" href="https://v0-zerobooks-app.vercel.app/auth/login">Start 14-day free trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Scale</div>
+          <div class="plan-price"><span class="price-num">$149</span><span class="price-per">/mo</span></div>
+          <p class="plan-desc">For high-volume multi-channel businesses.</p>
+          <ul class="plan-features">
+            <li>Unlimited connections</li>
+            <li>Custom chart of accounts</li>
+            <li>Priority support</li>
+            <li>API access</li>
+            <li>Dedicated onboarding</li>
+          </ul>
+          <a class="btn-ghost btn-full" href="https://v0-zerobooks-app.vercel.app/auth/login">Talk to us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CTA BAND ═══════════════════════════════════ -->
+  <section class="cta-band" aria-label="Call to action">
+    <div class="cta-orb" aria-hidden="true"></div>
+    <div class="section-inner cta-inner">
+      <h2>Your books should run<br><em>themselves.</em></h2>
+      <p>Join hundreds of Shopify and Amazon sellers who've made bookkeeping disappear.</p>
+      <div class="cta-actions">
+        <a class="btn-primary" href="https://v0-zerobooks-app.vercel.app/auth/login">Start for free today</a>
+        <span class="cta-note">No credit card required • Setup in 5 minutes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <a class="logo-mark" href="#top">
+          <span class="logo-al" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="32" height="32">
+              <defs>
+                <radialGradient id="fg" cx="50%" cy="50%" r="60%">
+                  <stop offset="0%" stop-color="#f0c040"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <circle cx="32" cy="32" r="18" fill="url(#fg)" opacity="0.9"/>
+              <circle cx="32" cy="32" r="4" fill="#ffd700"/>
+            </svg>
+          </span>
+          <span class="logo-wordmark">Aura<span>Ledger</span></span>
+        </a>
+        <p>Real-time bookkeeping for<br>Shopify &amp; Amazon sellers.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong>Product</strong>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <strong>Company</strong>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <strong>Legal</strong>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AuraLedger. All rights reserved.</span>
+      <span>Built for operators, by operators.</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Navbar scroll state ──────────────────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ── Smooth anchor scrolling ──────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── Hamburger / mobile drawer ────────────────────────────────────────────
+    const hamburger = document.querySelector('.hamburger');
+    const drawer = document.querySelector('.mobile-drawer');
+    hamburger.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+      drawer.setAttribute('aria-hidden', !open);
+    });
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        drawer.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        drawer.setAttribute('aria-hidden', true);
+      });
+    });
+
+    // ── Scroll-reveal ────────────────────────────────────────────────────────
+    const revealEls = document.querySelectorAll(
+      '.feature-card, .step, .testimonial, .pricing-card'
+    );
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
