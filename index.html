@@ -117,6 +117,7 @@
   .lede{font-size:17px;color:var(--slate);max-width:520px;margin-bottom:34px}
   .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
   .hero-note{font-family:var(--mono);font-size:12px;color:var(--slate-dim);letter-spacing:.3px;margin-top:16px;max-width:480px}
+  .hero-subline{font-size:14.5px;color:var(--slate);margin-top:12px;max-width:500px}
   .hero-sub-cta{margin-top:14px;font-size:13.5px;color:var(--slate);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .hero-sub-cta a{color:var(--gold);border-bottom:1px solid var(--line);transition:border-color .2s}
   .hero-sub-cta a:hover{border-color:var(--gold)}
@@ -128,7 +129,8 @@
     background-size:cover,54%;background-repeat:no-repeat,no-repeat;background-position:center,center;
     background-color:var(--navy-700);border:2px solid var(--gold);
     box-shadow:0 6px 22px -8px rgba(201,162,75,.45)}
-  .founder-quote{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.5;color:var(--ink);margin-bottom:12px}
+  .founder-intro{font-family:var(--serif);font-size:16px;color:#fff;margin-bottom:8px}
+  .founder-quote{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.5;color:var(--slate);margin-bottom:0}
   .founder-name{font-family:var(--mono);font-size:11.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--gold)}
   @media(max-width:900px){.founder{flex-direction:column;text-align:center;align-items:center}}
 
@@ -223,6 +225,13 @@
     border:1px solid var(--line);color:var(--gold);display:flex;align-items:center;justify-content:center;
     font-size:11px;margin-top:1px}
   .beta-card .btn-primary{width:100%;justify-content:center;padding:17px;font-size:14px}
+  .beta-how{font-size:15.5px;color:var(--slate);margin-bottom:0}
+  .beta-how strong{color:var(--ink);font-family:var(--serif);font-weight:500}
+  .beta-scope{max-width:720px;margin:26px auto 0;text-align:left;padding:26px 30px;
+    background:rgba(13,27,46,.5);border:1px solid var(--line-soft);border-radius:14px}
+  .beta-scope .scope-title{font-family:var(--mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .beta-scope p{font-size:13.5px;color:var(--slate);line-height:1.6;margin-bottom:12px}
+  .beta-scope .scope-close{font-family:var(--serif);font-style:italic;color:var(--slate-dim);margin-bottom:0}
   .status-strip{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
   .chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.6px;padding:7px 13px;border-radius:7px;
     border:1px solid var(--line-soft);color:var(--slate)}
@@ -294,12 +303,13 @@
       <p class="lede">Shopify tells you what you sold. Your bank tells you what you got. AuraLedger accounts for everything in between — fees, refunds, and sales tax broken out properly, so your books tie out instead of approximating.</p>
       <div class="hero-actions">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScZrAbT8yyH9gMguGunIG-t13xqg8AcJE48d9mdXy543xuPEA/viewform" target="_blank" class="btn btn-primary">
-          See your last 3 months reconciled — free
+          See your last 60 days reconciled — free
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
-      <p class="hero-note">No cost · No credit card · Connect your store read-only. I walk you through your real books on a 30-min call.</p>
-      <p class="hero-sub-cta"><a href="https://docs.google.com/forms/d/e/1FAIpQLScZrAbT8yyH9gMguGunIG-t13xqg8AcJE48d9mdXy543xuPEA/viewform" target="_blank">Or apply for full beta access →</a> <span class="slots">Limited audit slots while in private beta</span></p>
+      <p class="hero-note">No cost · No credit card · Read-only connection · Limited beta slots</p>
+      <p class="hero-subline">Connect your store read-only. I walk you through your real books on a 30-min call.</p>
+      <p class="hero-sub-cta"><a href="https://docs.google.com/forms/d/e/1FAIpQLScZrAbT8yyH9gMguGunIG-t13xqg8AcJE48d9mdXy543xuPEA/viewform" target="_blank">Or apply for full beta access →</a></p>
     </div>
 
     <div class="bridge" id="bridge">
@@ -317,8 +327,8 @@
     <div class="founder reveal">
       <div class="founder-photo" role="img" aria-label="Fey Haberstroh"></div>
       <div>
+        <p class="founder-intro">I'm Fey Haberstroh, a fractional CFO.</p>
         <p class="founder-quote">"I built AuraLedger because I was tired of seller books that don't tie out — where the deposit never matches the sales total and nobody can explain why. This is the ledger I wanted for my own clients."</p>
-        <p class="founder-name">Fey Haberstroh — Fractional CFO, founder of AuraLedger</p>
       </div>
     </div>
   </div>
@@ -369,14 +379,14 @@
 <section id="pillars" class="pillars">
   <div class="wrap">
     <p class="label reveal">What the engine does</p>
-    <h2 class="heading reveal">A ledger built to be the <em>source of truth</em>.</h2>
-    <p class="sub reveal">Not a bridge into someone else's software — the accounting record itself, structured the way an accountant would keep it.</p>
+    <h2 class="heading reveal">Built as a true <em>double-entry ledger</em>.</h2>
+    <p class="sub reveal">Not a bridge into someone else's software — a complete, traceable record of every payout, structured the way an accountant would keep it.</p>
     <div class="pillar-grid">
       <div class="pillar reveal">
         <p class="num">01 / LEDGER</p>
         <h3>A real ledger, not a sync tool</h3>
-        <p>Every payout posts as balanced double-entry against a full chart of accounts. Your P&amp;L, balance sheet, and trial balance always tie out — because they're generated from the ledger, not reconstructed after the fact.</p>
-        <span class="badge">Source of truth</span>
+        <p>Most e-commerce tools push one rolled-up number into your accounting software and hope it reconciles. AuraLedger is built as a true double-entry general ledger — every payout is decomposed into its actual components and each posts as a balanced entry against a full chart of accounts. Not a summary. A traceable record.</p>
+        <span class="badge">Traceable record</span>
       </div>
       <div class="pillar reveal">
         <p class="num">02 / PAYOUTS</p>
@@ -407,11 +417,10 @@
         <span class="chip live">✓ SKU-level cost tracking — built</span>
         <span class="chip dev">◷ Amazon sync — in development</span>
       </div>
-      <p>During beta, you connect your Shopify store (read-only) and I run your last 60 days through the engine. The reconciled output gets walked through with you on a 30-minute call. Your actual books, not a canned demo.</p>
-      <p class="emph">Early and real beats polished and overstated.</p>
+      <p class="beta-how"><strong>How the beta works.</strong> You connect your Shopify store (read-only — nothing is written back, nothing is changed). I run your last 60 days through the engine, then walk you through the reconciled output line by line on a 30-minute call. Your actual books, not a canned demo.</p>
       <div class="divider"></div>
       <div class="perks">
-        <div class="perk"><span class="ck">✓</span><span>Full reconciliation of 2–3 months of your Shopify data</span></div>
+        <div class="perk"><span class="ck">✓</span><span>Full reconciliation of your last 60 days of Shopify data</span></div>
         <div class="perk"><span class="ck">✓</span><span>Processing fees and refunds broken out from gross revenue</span></div>
         <div class="perk"><span class="ck">✓</span><span>Sales tax liability tracked by state</span></div>
         <div class="perk"><span class="ck">✓</span><span>A clean set of financial statements to hand your accountant</span></div>
@@ -419,13 +428,20 @@
       </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScZrAbT8yyH9gMguGunIG-t13xqg8AcJE48d9mdXy543xuPEA/viewform" target="_blank" class="btn btn-primary">Apply for free beta access</a>
     </div>
+
+    <div class="beta-scope reveal">
+      <p class="scope-title">What beta means</p>
+      <p>AuraLedger runs alongside your existing books — not in place of them. It does not act as, and is not, your system of record for legal retention purposes, and you remain responsible for retaining your own financial and accounting records as required by applicable law.</p>
+      <p>Reports generated during beta are for your review. They aren't intended for tax filing, lender submission, or any other reliance without your accountant's sign-off.</p>
+      <p class="scope-close">Early and real beats polished and overstated. This is what's true today.</p>
+    </div>
   </div>
 </section>
 
 <section id="listen" class="listen-section">
   <div class="wrap listen-inner">
     <p class="label reveal" style="justify-content:center">Prefer to listen?</p>
-    <h2 class="heading reveal" style="text-align:center">The 20-minute <em>breakdown</em>.</h2>
+    <h2 class="heading reveal" style="text-align:center">The full <em>breakdown</em>.</h2>
     <p class="sub reveal" style="margin:0 auto 34px">Why your deposits never match your sales — the full walkthrough, in audio.</p>
     <div class="video-frame reveal">
       <iframe src="https://www.youtube.com/embed/vrknJMBR5tI" title="AuraLedger — why your deposits never match your sales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
@@ -474,4 +490,4 @@
   bio.observe(bridge);
 </script>
 </body>
-</html>>
+</html>
